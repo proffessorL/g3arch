@@ -104,7 +104,9 @@ main > section{
 .banner-image{
     width: 100%;
 }
-
+ .feature-image img{
+        max-width: 100%;
+    }
 /* team and feature style */
 .teams{
     align-items: center;
@@ -149,6 +151,18 @@ main > section{
 }
 .display-feature{
     gap: 140px;
+}
+#exp-badge{
+    padding: 45px 42px;
+    font-size: 1.25rem;
+    font-weight: 500 ;
+    margin-left: -100px;
+    margin-top: -100px;
+
+}
+#exp-year{
+    font-size: 3.5rem;
+    font-weight: 700;
 }
 
 /* Some facts */
@@ -200,7 +214,7 @@ main > section{
 /* responsive media */
 @media screen and (max-width: 576px) {
     .navbar ,
-     .nav-links{
+     .nav-links , .display-feature {
         flex-direction: column;
     }
     .team-img-container {
@@ -228,4 +242,18 @@ main > section{
         margin-bottom: 30px;
         margin-left: 50px;
     }
+
+    .feature-card{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #exp-badge{
+        font-size: 1rem;
+    font-weight: 500 ;
+    margin-left: 50px;
+    margin-top: 30px;
+
+    }
+    
 }
